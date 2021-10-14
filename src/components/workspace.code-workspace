@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"path": "..\\..\\..\\flask"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Dracula",
+		"javascript.validate.enable": false,
+		"eslint.alwaysShowStatus": true,
+		"prettier.disableLanguages": [
+			"javascript",
+			"javascriptreact"
+		],
+		"emmet.triggerExpansionOnTab": true,
+		"emmet.includeLanguages": {
+			"javascript": "javascriptreact"
+		}
+	}
+}
