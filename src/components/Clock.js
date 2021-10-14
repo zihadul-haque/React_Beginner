@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Button from './Button';
 
 class Clock extends Component {
     // constructor(props){ props do not use any case.so we can neglect the 
@@ -17,9 +17,9 @@ class Clock extends Component {
     componentWillUnmount(){
         clearInterval(this.clockTimer)
     }
-    handleElement=()=>{
+    handleElement=(locale)=>{
        this.setState({
-           locale:'en-US'
+          locale,
        })
     };
     tick(){
@@ -28,14 +28,18 @@ class Clock extends Component {
         })
     }
     render() { 
+        console.log('clock component rendered')
         const {date,locale}=this.state;
+        //destructuring 
         return(   
             <div>
             <h1 className='heading'>
                 <span className='text'>{date.toLocaleTimeString(locale)}
                 </span>
-            </h1>
-            <button onClick={this.handleElement}>click me</button>
+            </h1> 
+            <Button change={this.handleElement} locale='en-US'/>
+             
+             {/* we can use .bind method for send parameter instead of arrow function. */}
             </div>);
     }
 }

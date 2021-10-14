@@ -1,6 +1,7 @@
 // import logo from './logo.svg';
 import './App.css';
 import ClickCounter from './components/ClickCounter';
+import Clock from './components/Clock';
 import Hovercounter from './components/Hovercounter';
 
 function App() {
@@ -11,9 +12,9 @@ function App() {
       <Hovercounter/>
       {/* <Form/> */}
       {/* <Eventbind/>
-      <Form/>
+      <Form/> */}
       <Clock />
-      <Clock />
+      {/* <Clock />
       <LoginControl /> */}
     </div>
   );
